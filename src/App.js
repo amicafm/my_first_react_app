@@ -8,8 +8,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          OLAR REACT
         </p>
+
+        <h1>
+    Hello, {formatName(user)}!
+  </h1>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -22,5 +26,14 @@ function App() {
     </div>
   );
 }
+
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Amily',
+  lastName: 'Mascaro'
+};
 
 export default App;
